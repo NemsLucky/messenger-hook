@@ -6,7 +6,7 @@ const app = express()
 app.use(express.json())
 
 app.get("/", (req, res)=>{
-    res.sendStatus(200)
+    res.status(200).send("<h1> welcome to my web page </h1>")
 })
 
 app.post("/webhook", (req, res)=>{
