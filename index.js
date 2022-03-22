@@ -45,4 +45,6 @@ app.get("/webhook", (req, res)=>{
 
 })
 
-app.listen(8080, _=>console.log("listing on port ", 8080))
+const PORT = process.env.PORT || 8080
+
+app.listen(PORT, _=>console.log("server listing on port ", PORT))
